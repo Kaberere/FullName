@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Example - example-guide-concepts-1-production</title>
+  
+
+  <script src="//code.angularjs.org/snapshot/angular.min.js"></script>
+  
+
+  
+</head>
+<body >
+  <div ng-app ng-init="fname='Eve';lname='Kaberere';yob=1995;gender;age">
+  <b>EIT:</b>
+  <div>
+    <b>First Name:</b>
+    <input ng-model="fname">
+  </div>
+  <br>
+  <div>
+    <b>Last Name:</b>
+    <input ng-model="lname">
+  </div>
+  <br>
+  <div>
+    <b>Year of Birth:</b> 
+    <input type = "number" ng-model="yob">
+  </div>
+  <br>
+  <div>
+    <b>Gender:</b> <br>
+    <input type = "radio" ng-model="gender" value = "Female">Female <br>
+    <input type = "radio" ng-model="gender" value = "Male">Male <br>
+  </div>
+  <br>
+  <b>Summary:</b>
+  <br>
+  <div>
+    <b>Full Name:</b>{{fname + " " + lname}}
+  </div>
+  <div>
+    <b>Age:</b>{{2018 - yob}}
+  </div>
+  <div>
+    <b>Gender:</b>{{gender}}
+  </div>
+</div>
+</body>
+</html>
+
+<!-- 
+Copyright 2018 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
